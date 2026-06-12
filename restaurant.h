@@ -36,7 +36,7 @@ class Restaurant{
 		void setMenu(vector <MenuItem>);
 		void setInfo(string);
 		void addToMenu(MenuItem &);
-		void getOrder();
+		void getOrder(Costumer &);
 		
 };
 #endif

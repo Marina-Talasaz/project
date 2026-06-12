@@ -18,5 +18,6 @@ class Food: public MenuItem{
 		int getSize()const;
 		void setTime(double);
 		void setSize(int);
+		void setSauce(int);
 };
 #endif

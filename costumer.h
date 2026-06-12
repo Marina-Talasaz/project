@@ -14,14 +14,18 @@ class Costumer: public User{
 	private:
 		double total; //majmoo gheymat
 		vector <MenuItem> cart; //sabade kharid
-		vector <int> cartStatus; //motenazer ba har item dar sabade kharid
+		vector <double> cartPrice; //motenazer ba har item dar sabade kharid
 		vector <MenuItem> history;
 		
 	public:
 		Costumer(string);
-		void addToCart(MenuItem &);
-		void deleteFromCart(MenuItem &);
+		vector <MenuItem> getCart()const;
+		double getTotal()const;
+		void addToCart(MenuItem &, double);
+		void deleteFromCart(int);
 		void costumerMainPage(vector <Restaurant>);
+		void showCart()const;
+		void pay()const;
 		
 };
 #endif
